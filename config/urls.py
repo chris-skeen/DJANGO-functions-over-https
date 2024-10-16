@@ -22,6 +22,6 @@ from app.views import hey_view, age_in_view, order_total_view
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("hey/<str:name>", hey_view),
-    path("age-in/<int:end>/<int:birthyear>/", age_in_view),
-    path("order-total/<int:burgers>/<int:fries>/<int:drinks>/", order_total_view)
+    path("age-in/<int:end>/<int:birthyear>", age_in_view),
+    path("order-total/<int:burgers>/<int:fries>/<int:drinks>", order_total_view)
 ]

@@ -5,7 +5,7 @@ from django.http.response import HttpResponse
 # Create your views here.
 
 def hey_view(request: HttpRequest, name: str) -> HttpResponse:
-  return HttpResponse(f'Hey {name}!')
+  return HttpResponse(f'Hey, {name}!')
 
 def age_in_view(request: HttpRequest, end: int, birthyear: int) -> HttpResponse:
   age = end - birthyear
